@@ -65,12 +65,12 @@ exports.cssLoaders = function (options) {
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
-    stylus: generateLoaders('stylus', {
+    stylus: generateLoaders('stylus'{{#theme}}, {
       import: [config.mand.theme.path]
-    }),
-    styl: generateLoaders('stylus', {
+    }{{/theme}}),
+    styl: generateLoaders('stylus'{{#theme}}, {
       import: [config.mand.theme.path]
-    })
+    }{{/theme}})
   }
 }
 

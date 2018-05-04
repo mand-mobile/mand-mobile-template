@@ -10,11 +10,13 @@ function resolve (dir) {
 
 module.exports = {
   mand: {
+    {{#theme}}
     theme: {
       path: resolve('src/styles/theme.styl')
     },
+    {{/theme}}
     pxtorem: {
-      // If you modify rootValue, you also need to modify rem in static/retina.js
+      // If you modify rootValue, you also need to modify rem in static/responsive.js
       rootValue: 100, // 1rem=100px
       propWhiteList: []
     }

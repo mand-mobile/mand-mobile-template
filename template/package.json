@@ -26,7 +26,10 @@
   },
   "dependencies": {
     "mand-mobile": "^1.0.9",
+    "fastclick": "^1.0.6",
+    {{#theme}}
     "nib": "^1.1.2",
+    {{/theme}}
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}
   },

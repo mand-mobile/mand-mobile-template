@@ -3,10 +3,17 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'
+import * as FastClick from "fastclick"
 import App from './App'
 {{#router}}
 import router from './router'
 {{/router}}
+{{#theme}}
+import './styles/theme.styl'
+{{/theme}}
+import './styles/global.css'
+
+FastClick.attach(document.body)
 
 Vue.config.productionTip = false
 

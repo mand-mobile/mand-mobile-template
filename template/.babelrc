@@ -14,8 +14,9 @@
     [
       "import",
       {
-        "libraryName": "mand-mobile",
+        "libraryName": "mand-mobile"{{#theme}},
         "libraryDirectory": "components"
+        {{/theme}}
       }
     ]
   ]{{#if_or unit e2e}},

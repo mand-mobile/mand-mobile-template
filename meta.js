@@ -74,6 +74,11 @@ module.exports = {
       type: 'confirm',
       message: 'Install vue-router?',
     },
+    theme: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Need customize theme?',
+    },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
@@ -171,6 +176,7 @@ module.exports = {
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
     'src/views/**/*': 'router',
+    'src/styles/theme.styl': 'theme',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
