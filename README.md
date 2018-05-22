@@ -1,6 +1,6 @@
 # mand-mobile-template
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+> A full-featured Webpack setup with Mand Mobile and also with hot-reload, lint-on-save, unit testing, css extraction.
 
 ## Usage
 
@@ -16,33 +16,25 @@ $ npm run dev
 
 The development server will run on port 8080 by default. If that port is already in use on your machine, the next free port will be used.
 
-## What's Included
+## Scripts
+
+[For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
 
 - `npm run dev`: first-in-class development experience.
-  - Webpack + `vue-loader` for single file Vue components.
-  - State preserving hot-reload
-  - State preserving compilation error overlay
-  - Lint-on-save with ESLint
-  - Source maps
 
 - `npm run build`: Production ready build.
-  - JavaScript minified with [UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony).
-  - HTML minified with [html-minifier](https://github.com/kangax/html-minifier).
-  - CSS across all components extracted into a single file and minified with [cssnano](https://github.com/ben-eb/cssnano).
-  - Static assets compiled with version hashes for efficient long-term caching, and an auto-generated production `index.html` with proper URLs to these generated assets.
-  - Use `npm run build --report`to build with bundle size analytics.
 
 - `npm run unit`: Unit tests run in [JSDOM](https://github.com/tmpvar/jsdom) with [Jest](https://facebook.github.io/jest/), or in PhantomJS with Karma + Mocha + karma-webpack.
-  - Supports ES2015+ in test files.
-  - Easy mocking.
 
 - `npm run e2e`: End-to-end tests with [Nightwatch](http://nightwatchjs.org/).
-  - Run tests in multiple browsers in parallel.
-  - Works with one command out of the box:
-    - Selenium and chromedriver dependencies automatically handled.
-    - Automatically spawns the Selenium server.
+    
+## Custom Theme
+We have already integrated configuration of custom theme within the project. You can enable it in two steps:
 
-## Documentation
+- At initialization，Answer `Y` to question `Need customize theme?` 
 
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+- Edit `src/styles/theme.styl` during development
+
+Detailed configuration of custom theme can refer to [Custom Theme](https://didi.github.io/mand-mobile/#/docs/theme)
+
+
